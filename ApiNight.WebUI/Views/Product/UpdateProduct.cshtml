@@ -1,0 +1,24 @@
+﻿@model ApiNight.WebUI.Dtos.ProductDtos.GetProductByIdDto
+
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container">
+    <br /><br />
+    <form method="post">
+        <input type="hidden" asp-for="ProductId" />
+        <label>Ürün Adı</label>
+        <input type="text" asp-for="ProductName" class="form-control" />
+        <br />
+        <label>Ürün Fiyatı</label>
+        <input type="text" asp-for="ProductPrice" class="form-control" />
+        <br />
+        <label>Ürün Stok Sayısı</label>
+        <input type="text" asp-for="ProductStock" class="form-control" />
+        <br />
+        <button class="btn btn-info">Ürünü Kaydet</button>
+    </form>
+</div>
